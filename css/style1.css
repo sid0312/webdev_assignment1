@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'CaviarDreams', sans-serif;
+    
+}
+header{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../img/frontimg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav{
+    width:100%;
+    height:15vh;
+    background: rgba(0,0,0,0.4);
+    
+    color:white;display: flex; justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    text-transform: lowercase;
+}
+nav .menu
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav .menu a{
+    width:20%;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+nav .menu a:hover{
+    color: #63A8FF;
+}
+
+main{
+    width:100;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+section{
+    
+}
+section h3{
+    font-size:35px;
+    font-weight:100;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black ;
+    padding-bottom: 40px;
+    
+}
+section h1{
+    font-size:60px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black ;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    color:whitesmoke;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    outline:none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 450px;
+    text-decoration: none;
+    letter-spacing: 1px; 
+    transition: all .5s ease;
+}
+section .btnone{
+    background:#fff;
+    color:#000;  
+}
+.btnone:hover{
+    background-color: #63A8FF;
+    color:#fff;
+}
+section .btntwo{
+    background-color: #63A8FF;
+    color:#fff;
+}
+.btntwo:hover{
+    background:#fff;
+    color:#000; 
+}
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color: #63A8FF;
+}
+@keyframes changetext{
+    0%{content:"A Platform";}
+    20%{content:"Free Expression";}
+    40%{content:"Awesome Ideas";}
+    60%{content:"Novel Templates";}
+    80%{content:"A larger audience";}
+    100%{content:"User Security";}
+}
